@@ -7,7 +7,7 @@ let queue = []
 
 // we're doing every 5 seconds so we don't have to wait forever...
 // actual time may vary based on your app's needs
-setInterval(sendProfileQueue, 5000)
+// setInterval(sendProfileQueue, 5000)
 
 function reportProfile(
   id, // the "id" prop of the Profiler tree that has just committed
@@ -18,7 +18,7 @@ function reportProfile(
   commitTime, // when React committed this update
   interactions, // the Set of interactions belonging to this update
 ) {
-  queue.push({
+  console.log({
     id,
     phase,
     actualDuration,

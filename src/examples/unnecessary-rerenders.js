@@ -14,6 +14,8 @@ function NameInput({name, onNameChange}) {
   )
 }
 
+NameInput = React.memo(NameInput)
+
 function Example() {
   const [name, setName] = React.useState('')
   const [count, setCount] = React.useState(0)
